@@ -1,0 +1,362 @@
+
+:root
+{
+
+    --plomo:rgba(238, 229, 229, 0.192);
+    --negro: rgb(54, 54, 54);
+    --rojo: rgb(230, 13, 13);
+    --azul:blue;
+    --degradado:linear-gradient(200deg, var(--negro),var(--rojo));
+    --degradado2:linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    --degradado3: linear-gradient(90deg, var(--morado),var(--rojo),var(--amarillo));
+    --fondo-hover: #e3e3e3;
+    --fondo-blanco: #fff;
+	--fondo-gris-a: #efefef;
+	--fondo-gris-b: #f5f5f5;
+	--fuente-gris: #919191;
+	--borde-gris: #cccccc;
+	--fondo-hover: #e3e3e3;
+	--fondo-blanco-MO: #000;
+	--fondo-gris-a-MO: #efefef;
+	--fondo-gris-b-MO: #f5f5f5;
+	--fuente-gris-MO: #919191;
+	--borde-gris-MO: #cccccc;
+	--fondo-hover-MO: #e3e3e3;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL INVICIBLE */
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track
+{
+    background: none;
+}
+::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border-radius: 5px;
+}
+.barra-lateral:hover::-webkit-scrollbar-thumb
+{
+    background: #717171;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: #888;
+}
+
+/* SCROLL INVICIBLE */
+
+body
+{
+    background: black;
+}
+header
+{
+    top: 0;
+    left: 0;
+}
+
+.contenedor-nav
+{
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    border-bottom: 1px solid var(--plomo) ;
+}
+.logo
+{
+    max-height: 60px;
+}
+ul
+{
+    display: flex;
+    top: -8%;
+   
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a
+{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+    font-weight: 500;
+}
+nav ul li a:hover
+{
+    color: red;
+}
+nav ul li a:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--borde-gris-MO);
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after
+{
+    width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.buscador
+{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    background: white;
+    border-radius: 30px;
+    padding: 5px 5px;
+    margin-left: 10px;
+    position: relative;
+    right: 40px;
+}
+
+.buscador i
+{
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: black;
+    margin-right: 50px;
+}
+
+.buscador input
+{
+    background: transparent;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    width: 200px;
+    font-weight: 500;
+}
+
+.botones
+{
+    position: relative;
+    right: 40px ; 
+}
+
+.botones .boton1
+{
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 35px 20px;
+    border-radius: 500px;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background: #ffffff;
+    border: 1px solid white;
+    background-image: url(..//img/Pixel\ Art\ Aesthetic\ Chandigarh\ City.gif);
+    background-size: 130px;
+    background-repeat: no-repeat;
+}
+.boton1:hover
+{
+    background-image: url(..//img/pixel-goust-2.gif);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    border-color: white;
+    color: white;
+}
+
+.boton2
+{
+    color: #e4dada;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    border-radius: 500px;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background: #222121;
+    border: 0.5px solid white; 
+    margin: 0 45px 0 45px;
+}
+.boton2:hover
+{
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+.cuerpo
+{ 
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.cuerpo .izq
+{
+    width: 1000px;
+    height: 1200px;
+
+}
+
+.cuerpo .izq .titulo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo .izq .titulo h1
+{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    display: inline-block;
+    background: var(--degradado2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.cuerpo .izq  .parrafo
+{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cuerpo .izq  .parrafo .nota span
+{
+    color: white;
+    text-align: center;
+}
+
+.cuerpo .izq  .parrafo .img img
+{
+    width: 400px;
+    height: 485px;
+    margin-left: 50px;
+}
+
+.cuerpo .izq  .parrafo-2
+{
+    width: 900px;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.cuerpo .izq  .parrafo-2 img
+{
+    width: 900px;
+    height: 150px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.cuerpo .izq  .parrafo-2 h1
+{
+    margin-top: 20PX;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    background-color: var(--fondo-blanco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.cuerpo .izq  .parrafo-2 span
+{
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+.cuerpo .der
+{
+    width: 400px;
+    height: 1200px;
+}
+
+.cuerpo .der .contenedor
+{
+    
+    height: 100%;
+    margin-top: 80px;
+    border-left: 1px solid;
+    border-color: white;
+}
+
+.cuerpo .der .contenedor ul
+{
+    display: block;
+    margin-left: 40px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    display: inline-block;
+    background: var(--degradado2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.cuerpo .der .contenedor ul li:hover
+{
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.cuerpo .der .contenedor ul li:
+{
+    transform: translateY(-15px);
+}
+
+.cuerpo .der .contenedor img
+{
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.cuerpo .der .contenedor img:hover
+{
+    transform: translateY(-15px);
+    transition: all 0.25s;  
+}
